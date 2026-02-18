@@ -62,7 +62,8 @@ async function generate() {
     references: references.value
   };
 
-  const res = await fetch("https://YOUR-VERCEL-URL/api/generate", {
+  const res = await fetch("https://your-project-name.vercel.app/api/generate
+", {
     method: "POST",
     headers: {"Content-Type":"application/json"},
     body: JSON.stringify(data)
